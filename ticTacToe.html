@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="ticTacToe.css">
+</head>
+<body>
+
+    <div class="header">
+        <!-- <br><br> -->
+        <h1 align="center">Tic Tac Toe</h1>
+        <div id="NameWrapper">
+            <div class="playerInput">
+                <input type="text"  placeholder="Player 1 Name :" id="p1">
+                <input type="text"  placeholder="Player 2 Name :" id="p2">
+            </div>
+            <input type="button" value="Start Game" onclick="startGame()">
+        </div>
+    </div>
+    <div class="container" id="game">
+        <div class="side1">
+            <h3 id="user1"></h3> <br>
+            <h5>Score</h5>
+            <p id="user1_score">0</p>
+        </div>
+        <div class="content">
+            <table cellspacing="10" align="center">
+                <tr>
+                    <td><input type="button" id="b1" onclick="show1()"></td>
+                    <td><input type="button" id="b2" onclick="show2()"></td>
+                    <td><input type="button" id="b3" onclick="show3()"></td>
+                </tr>
+                <tr>       
+                    <td><input type="button" id="b4" onclick="show4()"></td>
+                    <td><input type="button" id="b5" onclick="show5()"></td>
+                    <td><input type="button" id="b6" onclick="show6()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b7" onclick="show7()"></td>
+                    <td><input type="button" id="b8" onclick="show8()"></td>
+                    <td><input type="button" id="b9" onclick="show9()"></td>
+                </tr>
+            </table> 
+        </div>
+        <div class="side2">
+            <h3 id="user2"></h3> <br>
+            <h5>Score</h5>
+            <p id="user2_score">0</p>
+        </div>
+        
+    </div>
+
+    
+    <script src="./ticTacToe.js"></script>
+</body>
+</html>

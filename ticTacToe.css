@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    display: flex;
+    background: gray;
+}
+
+.content input[type=button] {
+    height: 80px;
+    width: 80px;
+    font-size: large;
+}
+
+.header {
+    width: 100vw;
+    height: fit-content;
+    color: white;
+    background: #1d3557;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header input {
+    padding: 10px;
+    margin: 5px;
+}
+
+.side1,
+.side2 {
+    width: 100%;
+    background: #001d3d;
+    color: white;
+    padding: 20px 0 0 20px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+}
+
+.content {
+    background: #a8dadc;
+    /* padding: 70px; */
+}
+
+#NameWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    /* margin-top: 30px; */
+    /* width: 100vw; */
+}
+#NameWrapper *{
+    border: none;
+    margin-bottom: 10px;
+}
+.header h1 {
+    padding: 20px;
+}
+
+#NameWrapper input[type=button]{
+    background: #318ec8;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+}
+@media (max-width:425px){
+    .container{
+        flex-direction: column;
+    }
+    .side1,
+    .side2{
+        font-size: .9em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .content table{
+        transform: scale(.7);
+        display: flex;
+        justify-content: center;
+    }
+    #NameWrapper .playerInput{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
